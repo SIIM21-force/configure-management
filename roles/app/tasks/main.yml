@@ -1,0 +1,18 @@
+- name: Upload static site tarball
+  copy:
+    src: site.tar.gz
+    dest: /var/www/html/site.tar.gz
+
+- name: Extract static site
+  unarchive:
+    src: /var/www/html/site.tar.gz
+    dest: /var/www/html/
+    remote_src: yes
+
+- name: Ensure correct permissions
+  file:
+    path: /var/www/html/
+    state: directory
+    recurse: yes
+    owner: www-data
+    group: www-data

@@ -1,0 +1,9 @@
+---
+- name: Stop web service
+  hosts: webserver
+  become: yes
+  tasks:
+    - name: Stop nginx
+      service:
+        name: nginx
+        state: stopped

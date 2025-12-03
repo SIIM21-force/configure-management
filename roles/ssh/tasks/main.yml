@@ -1,0 +1,6 @@
+- name: Add public key only if not present
+  lineinfile:
+    path: /home/{{ ansible_user }}/.ssh/authorized_keys
+    line: "{{ lookup('file', '/home/sam/.ssh/id_ed25519.pub') }}"
+    create: yes
+    state: present
