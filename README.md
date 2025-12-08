@@ -1,6 +1,6 @@
 # Configuration Management with Ansible
 
-This project is a solution for the **[Configuration Management](https://roadmap.sh/projects/configuration-management)** project from [roadmap.sh](https://roadmap.sh). It demonstrates how to automate the configuration of a Linux server using **Ansible**, specifically tailored to a local development environment using **WSL (Windows Subsystem for Linux)**.
+This project is a solution for the **[Configuration Management](https://roadmap.sh/projects/configuration-management)** project from [roadmap.sh](https://roadmap.sh). It demonstrates how to automate the configuration of a Linux server using **Ansible**, specifically modified and tailored to a local development environment using **WSL (Windows Subsystem for Linux)**.
 
 ## 📖 Project Overview
 
